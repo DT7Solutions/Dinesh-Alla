@@ -116,6 +116,27 @@
 #about{
 	padding: 7.5% 0 5%;
 }
+.picman_tm_about .item{
+	padding: 10% 5% 7.5%;
+} 
+.picman_tm_about li:nth-child(3n+1) .item {
+    background-color: #f0f4ff;
+}
+.picman_tm_about li:nth-child(3n+2) .item {
+    background-color: #fff3e9;
+}
+.picman_tm_about li:nth-child(3n) .item {
+    background-color: #eae8fd;
+}
+.picman_tm_about li:nth-child(3n+4) .item {
+    background-color: #ffebee;
+}
+.picman_tm_about li:nth-child(5) .item {
+    background-color: #e0f7fa;
+}
+.picman_tm_about li:nth-child(6) .item {
+    background-color: #e8f5e9;
+}
 
 /*------------------------------------------------------------------*/
 /*	12) Information Box
@@ -134,8 +155,11 @@
 }
 .picman_tm_information .img{
 	width: 125%;
+    border-radius: 0%;
 }
-
+.picman_tm_information .right_box:hover .main {
+    transform: scale(1) translateZ(0);
+}
 /*------------------------------------------------------------------*/
 /*	13) Page Title
 /*------------------------------------------------------------------*/
@@ -206,6 +230,7 @@
 /*------------------------------------------------------------------*/
 #nomination {
     padding: 5% 0px 2.5%;
+    background-color: transparent;
 }
 .picman_tm_nomination img{
     border-radius: 50%;
@@ -214,10 +239,18 @@
 .picman_tm_nomination li{
     margin-bottom: 2.5%;
 }
+.picman_tm_nomination{
+    margin-top: 5%;
+    padding: 5% 0px 2.5%;
+	background-color: #34444c;
+}
 
 /*------------------------------------------------------------------*/
 /*	20) Partners
 /*------------------------------------------------------------------*/
+.picman_tm_partners{
+	margin-top: 5%;
+}
 .picman_tm_partners li{
 	height: 125px;
 	line-height: 125px;
@@ -261,8 +294,8 @@
     padding-right: 90px;
 }
 .picman_tm_contact .left_top ul h4 {
-    width: 25%;
-    padding-right: 25px;
+    width: 10%;
+    padding-right: 5px;
 }
 
 /*------------------------------------------------------------------*/
@@ -288,6 +321,9 @@
 /*------------------------------------------------------------------*/
 #testimonials {
     padding: 5% 0 7.5% 0;
+}
+.picman_tm_testimonial{
+    margin: 5% 0 15%;
 }
 
 /*---------------------------------------------------*/
