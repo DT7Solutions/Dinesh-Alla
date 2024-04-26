@@ -511,7 +511,7 @@
 					handler: function(){
 						if(!el.hasClass('stop')){
 							el.addClass('stop').countTo({
-								refreshInterval: 50,
+								refreshInterval: 500,
 								formatter: function (value, options) {
 									return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
 								},	
