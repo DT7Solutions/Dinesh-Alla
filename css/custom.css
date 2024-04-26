@@ -297,6 +297,9 @@
     width: 10%;
     padding-right: 5px;
 }
+.picman_tm_contact .right_part {
+    padding: 5%;
+}
 
 /*------------------------------------------------------------------*/
 /*	23) Instagram
@@ -360,6 +363,12 @@
     .picman_tm_footer .footer_bottom > *{
         padding-left: 70px;
     }
+    .picman_tm_footer .copyright p{
+        text-align: center;
+    }
+    .picman_tm_footer .help_link ul{
+        justify-content: center;
+    }
 }
 /* Mobile devices */
 @media (max-width: 767px) {
@@ -391,7 +400,14 @@
     }
     .picman_tm_footer .help_link ul {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+    .picman_tm_footer .copyright p{
+        text-align: center;
+        padding: 0 5%;
+    }
+    .picman_tm_footer .help_link li{
+        padding-left: 5%;
     }
 }
 
