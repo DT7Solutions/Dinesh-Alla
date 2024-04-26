@@ -90,6 +90,79 @@
 /*------------------------------------------------------------------*/
 /*	10) Hero
 /*------------------------------------------------------------------*/
+.picman_tm_hero .gallery_list_wrap ul li{
+	display: none;
+}
+.picman_tm_hero .left_box:after{
+    background-color: transparent;
+}
+.picman_tm_hero .project_list_wrap .list li{
+    display: none;
+}
+.picman_tm_hero .inner_wrap {
+    display: flex;
+    padding: 120px 0px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.picman_tm_hero .right_box{
+    padding-left: 10%;
+	width: auto;
+	min-width: 50%;
+	position: relative;
+}
+.picman_tm_hero .img{
+    height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+    scale: 1;
+}
+.picman_tm_hero .main{
+	position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.picman_tm_hero .left_box h4{
+    font-size: 18px;
+}
+.picman_tm_hero .left_box h3{
+    color: #000000;
+    font-size: 65px;
+}
+.picman_tm_hero .left_box h5{
+    color: #000000;
+    font-size: 26px;
+}
+.picman_tm_hero .left_box .typing-container {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    white-space: pre;
+}
+.picman_tm_hero .left_box .cursor {
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    background-color: black;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+
 .slider-image img{
     width: 50%;
     height: 10%;
@@ -110,11 +183,69 @@
     font-size: 50px;
 }
 
+
+/*------------------------------------------------------------------*/
+/*	10.A) Achievements
+/*------------------------------------------------------------------*/
+#achievements {
+    padding: 5% 0px 2.5%;
+    background-color: #34444c;
+}
+.picman_tm_achievements{
+    padding: 5% 20% 2.5%;
+}
+.picman_tm_achievements ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -100px;
+}
+.picman_tm_achievements li {
+    width: 50%;
+    padding-left: 100px;
+    margin-bottom: 40px;
+}
+.picman_tm_achievements .item {
+    width: 100%;
+    text-align: center;
+}
+.picman_tm_achievements img {
+    scale: 1.2;
+    margin-bottom: 25px;
+}
+.picman_tm_achievements h4 {
+    font-size: 18px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.picman_tm_achievements h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.picman_tm_achievements p {
+    color: #c1bbba;
+}
+
 /*------------------------------------------------------------------*/
 /*	11) About
 /*------------------------------------------------------------------*/
 #about{
-	padding: 7.5% 0 5%;
+	padding: 2.5% 0 0;
+}
+#about .container {
+    padding: 2.5% 0%;
 }
 .picman_tm_about .item{
 	padding: 10% 5% 7.5%;
@@ -169,7 +300,7 @@
 /*	14) Portfolio
 /*------------------------------------------------------------------*/
 #portfolio {
-    padding: 7.5% 0 7.5%;
+    padding: 5% 0 7.5%;
 }
 .picman_tm_portfolio .main{
 	border: 1px solid black;
@@ -326,7 +457,7 @@
     padding: 5% 0 7.5% 0;
 }
 .picman_tm_testimonial{
-    margin: 5% 0 15%;
+    margin: 5% 0 5%;
 }
 
 /*---------------------------------------------------*/
@@ -342,8 +473,48 @@
 @media (min-width: 1201px) {
 
 }
+
 /* Tablets devices */
 @media (min-width: 768px) and (max-width: 1200px) {
+    .picman_tm_hero .inner_wrap {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .picman_tm_hero .left_box{
+        display: block;
+        width: 100%;
+    }
+    .picman_tm_hero .left_box:after,
+    .picman_tm_hero .left_box:before{
+        display: none;
+    }
+    .picman_tm_hero .right_box{
+        padding-left: 0%;
+    }
+    .picman_tm_hero .img{
+        scale: 0.75;
+    }
+    .picman_tm_hero .main{
+        background-size: contain;
+    }
+    .picman_tm_hero .left_box h4{
+        font-size: 14px;
+    }
+    .picman_tm_hero .left_box h3{
+        font-size: 50px;
+    }
+    .picman_tm_hero .left_box h5{
+        font-size: 20px !important;
+    }
+    .picman_tm_hero .left_box h3,
+    .picman_tm_hero .left_box h4,
+    .picman_tm_hero .left_box h5{
+        margin-bottom: 5% !important;
+    }
+    .picman_tm_information .counter_list ul {
+        flex-wrap: nowrap;
+    }
+
     .picman_tm_modalbox .box_inner{
         width: 85%;
         max-width: 920px;
@@ -370,6 +541,7 @@
         justify-content: center;
     }
 }
+
 /* Mobile devices */
 @media (max-width: 767px) {
     .picman_tm_information .img{
