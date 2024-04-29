@@ -52,6 +52,33 @@
     max-height: 45px;
     scale: 1.5;
 }
+.picman_tm_header .menu a{
+    text-transform: uppercase;
+    color: rgba(91, 91, 91, 1);
+}
+.picman_tm_header .menu .current:not(.button) a {
+    border-bottom-color: #000000;
+}
+.picman_tm_header.animate .menu a {
+    color: #fff;
+}
+.picman_tm_header.animate .menu .current:not(.button) a {
+    border-bottom-color: #ffffff;
+}
+.logo-default {
+    display: block;
+}
+.logo-scrolled {
+    display: none;
+}
+.animate .logo-default {
+    display: none;
+}
+.animate .logo-scrolled {
+    display: block;
+}
+
+
 
 /*------------------------------------------------------------------*/
 /*	07) Modalbox
@@ -90,6 +117,18 @@
 /*------------------------------------------------------------------*/
 /*	10) Hero
 /*------------------------------------------------------------------*/
+.picman_tm_hero .overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 2;
+    background: rgba(254, 253, 251, 1);
+}
+.picman_tm_hero .left_box *{
+	color: rgba(221, 60, 50, 1);
+}
 .picman_tm_hero .gallery_list_wrap ul li{
 	display: none;
 }
@@ -136,6 +175,7 @@
 .picman_tm_hero .left_box h3{
     color: #000000;
     font-size: 58px;
+    text-transform: uppercase;
 }
 .picman_tm_hero .left_box h5{
     color: #000000;
