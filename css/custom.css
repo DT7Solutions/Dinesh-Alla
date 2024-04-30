@@ -7,7 +7,10 @@
 }
 :root{
     --main-color: rgb(234,71,35) !important;
-    --font-family: 'Overpass', sans-serif;
+    --font-family: 'Gambetta', serif;
+}
+body{
+	font-family: var(--font-family);
 }
 
 
@@ -127,7 +130,7 @@
     background: rgba(254, 253, 251, 1);
 }
 .picman_tm_hero .left_box *{
-	color: rgba(221, 60, 50, 1);
+	color: #000000;
 }
 .picman_tm_hero .gallery_list_wrap ul li{
 	display: none;
@@ -169,21 +172,38 @@
 	background-size: cover;
 	background-position: center;
 }
+.picman_tm_header .menu li:last-child a{
+    border: 2px solid #000000;
+}
+.picman_tm_hero .booking .button {
+    border: 1px solid #000;
+}
+.picman_tm_hero .booking .button span {
+    color: #fff;
+}
+.picman_tm_hero .booking .button:hover span {
+    color: #000;
+}
 .picman_tm_hero .left_box h4{
     font-size: 18px;
+    line-height: 25px;
+    word-spacing: 5px;
+    letter-spacing: 1.25px;
+    color:rgba(91, 91, 91, 1);
 }
 .picman_tm_hero .left_box h3{
-    color: #000000;
+	color: rgba(221, 60, 50, 1);
     font-size: 58px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .picman_tm_hero .left_box h5{
-    color: #000000;
-    font-size: 26px;
+	color:rgba(48, 48, 48, 1);
+    font-size: 22px;
+    text-transform: uppercase;
 }
 .picman_tm_hero .left_box .typing-container {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     white-space: pre;
 }
 .picman_tm_hero .left_box .cursor {
@@ -416,6 +436,43 @@
 	background-color: #34444c;
 }
 
+
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: auto;
+}
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 33.33%;
+    position: relative;
+}
+.swiper-slide img {
+    scale: 0.75;
+    display: block;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+}
+.slider-text {
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
+    background: transparent;
+}
+.slider-text h3,
+.slider-text h4{
+    font-size: 22px;
+}
+
+
+
 /*------------------------------------------------------------------*/
 /*	20) Partners
 /*------------------------------------------------------------------*/
@@ -462,11 +519,6 @@
 #contact {
     padding: 5% 0px;
 }
-.picman_tm_contact .left_part {
-    width: 60%;
-    max-width: 60%;
-    padding-right: 90px;
-}
 .picman_tm_contact .left_top ul h4 {
     width: 10%;
     padding-right: 5px;
@@ -475,6 +527,72 @@
     text-align: center;
     padding: 5%;
 }
+
+.contact-cards {
+    width: 60%;
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.contact-cards .title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    grid-column: span 2;
+}
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: white;
+    height: 200px;
+    width: 100%;
+}
+.card-icon {
+    border-radius: 50%;
+    padding: 5%;
+    margin-bottom: 10px;
+}
+.card-icon i {
+    color: white;
+    font-size: 24px;
+}
+.map-icon {
+    background: #f44336;
+}
+.phone-icon {
+    background: #4CAF50;
+}
+.whatsapp-icon {
+    background: #25D366;
+}
+.envelope-icon {
+    background: #2196F3;
+}
+.card-content {
+    text-align: center;
+}
+.card-content h4 {
+    margin-bottom: 10px;
+}
+.card-content p {
+    margin: 0;
+}
+.card-content a {
+    text-decoration: none;
+    color: black;
+}
+.card-content a:hover {
+    text-decoration: underline;
+}
+
 
 /*------------------------------------------------------------------*/
 /*	23) Instagram

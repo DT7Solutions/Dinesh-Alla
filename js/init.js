@@ -755,3 +755,25 @@ function typeText() {
 window.onload = typeText;
 
 
+
+var swiper = new Swiper('.swiper-container.two', {
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
