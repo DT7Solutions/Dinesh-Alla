@@ -155,7 +155,7 @@ body{
 }
 .picman_tm_hero .inner_wrap {
     display: flex;
-    padding: 120px 0px;
+    padding: 5% 0px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -267,11 +267,14 @@ body{
 /*	10.A) Achievements
 /*------------------------------------------------------------------*/
 #achievements {
-    padding: 5% 0px 2.5%;
-    background-color: #34444c;
+    padding: 2.5% 0px;
+}
+#achievements .picman_tm_title{
+    padding: 2.5% 0%;
 }
 .picman_tm_achievements{
-    padding: 5% 20% 2.5%;
+    padding: 2.5% 20% 2.5%;
+    background-color: #34444c;
 }
 .picman_tm_achievements ul {
     list-style-type: none;
@@ -567,9 +570,8 @@ body{
 }
 .contact-cards .title {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 30px;
     color: #333;
-    margin-bottom: 20px;
     grid-column: span 2;
 }
 .contact-card {
@@ -585,6 +587,11 @@ body{
     width: 100%;
 }
 .card-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     padding: 5%;
     margin-bottom: 10px;
