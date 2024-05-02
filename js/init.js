@@ -296,7 +296,7 @@
 					if(element.length){
 						$('html, body').animate({
 							scrollTop: element.offset().top-topbar
-						}, 800);
+						}, 500);
 					}
 						
 				}
@@ -729,7 +729,7 @@ $(".glitch").mgGlitch({
         }
     });
     $("#back-to-top").on("click", function () {
-        $("html, body").animate({ scrollTop: 0 }, 500);
+        $("html, body").animate({ scrollTop: 0 }, 1000);
     });
 })(jQuery);
 

@@ -63,7 +63,13 @@ body{
     border-bottom-color: #000000;
 }
 .picman_tm_header.animate .menu a {
-    color: #fff;
+    color: #fff !important;
+}
+.picman_tm_header.animate .menu a:hover{
+    color: #fff !important;
+}
+.picman_tm_header.animate .menu .button a:hover:after{
+	border-color: #fff !important;
 }
 .picman_tm_header.animate .menu .current:not(.button) a {
     border-bottom-color: #ffffff;
@@ -132,6 +138,12 @@ body{
 .picman_tm_hero .left_box *{
 	color: #000000;
 }
+.picman_tm_hero .left_box {
+    position: relative;
+    width: 500px;
+    max-width: 50%;
+    padding-top: 10%;
+}
 .picman_tm_hero .gallery_list_wrap ul li{
 	display: none;
 }
@@ -149,11 +161,11 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-.picman_tm_hero .right_box{
-    padding-left: 10%;
+.picman_tm_hero .right_box{    
 	width: auto;
 	min-width: 50%;
 	position: relative;
+    scale: 1.25;
 }
 .picman_tm_hero .img{
     height: 100%;
@@ -169,41 +181,48 @@ body{
     left: 0px;
     right: 0px;
     background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 }
 .picman_tm_header .menu li:last-child a{
-    border: 2px solid #000000;
+    color: #fff;
+}
+.picman_tm_header .menu .button:hover a{
+    color: #000;
+}
+.picman_tm_header .menu .button:hover a:after {
+    border: 2px solid #000 !important;
 }
 .picman_tm_hero .booking .button {
     border: 1px solid #000;
 }
 .picman_tm_hero .booking .button span {
+    text-transform: uppercase;
     color: #fff;
 }
 .picman_tm_hero .booking .button:hover span {
     color: #000;
 }
 .picman_tm_hero .left_box h4{
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 22px;
     word-spacing: 5px;
     letter-spacing: 1.25px;
     color:rgba(91, 91, 91, 1);
 }
 .picman_tm_hero .left_box h3{
 	color: rgba(221, 60, 50, 1);
-    font-size: 58px;
+    font-size: 54px;
     font-weight: 400;
     text-transform: uppercase;
 }
 .picman_tm_hero .left_box h5{
 	color:rgba(48, 48, 48, 1);
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 .picman_tm_hero .left_box .typing-container {
-    font-size: 22px;
+    font-size: 20px;
     white-space: pre;
 }
 .picman_tm_hero .left_box .cursor {
@@ -351,6 +370,16 @@ body{
 .picman_tm_information .right_box:hover .main {
     transform: scale(1) translateZ(0);
 }
+.picman_tm_information .counter_list li{
+	width: 33.3333%;
+	padding-left: 5%;
+	margin-bottom: 10%;
+}
+.picman_tm_information .counter_list h4 {
+    font-size: 25px;
+    line-height: 25px;
+}
+
 /*------------------------------------------------------------------*/
 /*	13) Page Title
 /*------------------------------------------------------------------*/
@@ -638,52 +667,6 @@ body{
 
 /* Tablets devices */
 @media (min-width: 768px) and (max-width: 1200px) {
-
-    /* .picman_tm_hero .inner_wrap {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-    .picman_tm_hero .left_box{
-        display: block;
-        width: 100%;
-        max-width: 100%;
-    }
-    .picman_tm_hero .left_box:after,
-    .picman_tm_hero .left_box:before{
-        display: none;
-    }
-    .picman_tm_hero .right_box{
-        padding-left: 0%;
-        height: 50%;
-        min-width: 100%;
-        width: 563px;
-    }
-    .picman_tm_hero .img{
-        scale: 1;
-    }
-    .picman_tm_hero .main{
-        background-size: contain;
-    }
-    .picman_tm_hero .left_box h4{
-        font-size: 14px;
-    }
-    .picman_tm_hero .left_box h3{
-        font-size: 50px;
-    }
-    .picman_tm_hero .left_box h5{
-        font-size: 20px !important;
-    }
-    .picman_tm_hero .left_box h3,
-    .picman_tm_hero .left_box h4,
-    .picman_tm_hero .left_box h5{
-        margin-bottom: 5% !important;
-    } */
-
     .picman_tm_hero .left_box{
         display: block;
         position: relative;
@@ -714,11 +697,15 @@ body{
         width: 100%;
         height: 75%;
         padding-left: 0px;
+        scale: 1.1;
     }
     .picman_tm_information .counter_list ul {
         flex-wrap: nowrap;
     }
-
+    .picman_tm_information .counter_list h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
     .picman_tm_modalbox .box_inner{
         width: 85%;
         max-width: 920px;
@@ -758,6 +745,10 @@ body{
 @media (max-width: 767px) {
     .picman_tm_information .img{
         width: 100%;
+    }
+    .picman_tm_information .counter_list h4 {
+        font-size: 18px;
+        line-height: 25px;
     }
     .picman_tm_modalbox .box_inner{
         width: 90%;
@@ -837,6 +828,7 @@ body{
         bottom: 10%;
         width: 100%;
         padding-left: 0px;
+        scale: 1;
     }
 
 }
