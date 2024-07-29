@@ -89,7 +89,7 @@
 	color: #fff;
 }
 .vlt-services {
-    text-align: center;
+    text-align: justify;
     overflow: hidden
 }
 .vlt-services__title {
@@ -131,6 +131,10 @@
 	object-fit: cover;
 	border-radius: 20px;
 	transition: transform 0.4s ease-out;
+}
+.vlt-testimonial-item {
+    padding: 2.5% 1.5%;
+    align-items: center;
 }
 .vlt-footer-copyright {
 	width: 100%;
@@ -273,16 +277,30 @@
 		top: 0%;
 		width: 100vw;
 	}
+	.vlt-fixed-socials {
+        display: block;
+        right: 25%;
+        bottom: 1.5%;
+		-webkit-transform: rotate(0deg) translate3d(50%,0,0);
+    	transform: rotate(0deg) translate3d(50%,0,0);
+    }
 	.hero-content {
 		position: relative;
 		bottom: -70%;
 	}
 	.vlt-partners .vlt-animated-block{
-		margin: 5% 0%;
+		margin: 2.5% 0%;
 	}
 	.vlt-partner-logo img {
 		max-height: 75px;
 		max-width: 100%;
+	}
+	.vlt-timeline-item {
+		padding: 5% 1.5%;
+	}
+	.vlt-timeline-item__title,
+	.vlt-timeline-item__year .vlt-btn {
+		padding: 2.5% 0%;
 	}
 	.contact-info {
 		text-align: center;
@@ -293,6 +311,10 @@
 	}
 }
 @media only screen and (max-width:575px) {
+	.vlt-custom--4124 {
+		right: 0%;
+		width: 115vw !important;
+	}
 	.hero-content {
 		position: relative;
 		bottom: -40%;
