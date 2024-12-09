@@ -614,17 +614,24 @@
 				return;
 			}
 			var el = $('.vlt-project-showcase-slider .swiper-container');
-			new Swiper(el, {
-				speed: 1000,
-				spaceBetween: 30,
-				grabCursor: true,
-				slidesPerView: 1,
-				breakpoints: {
-					575: {
-						slidesPerView: 2,
-					},
-				},
-			});
+
+new Swiper(el[0], { // Ensure the correct element is passed
+    speed: 1000,
+    spaceBetween: 30,
+    grabCursor: true,
+    slidesPerView: 1,
+    loop: true, // Move loop here
+    autoplay: { // Configure autoplay properly
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        575: {
+            slidesPerView: 2, // Only slidesPerView should be here
+        }
+    }
+});
+
 		},
 		initParallax: function () {
 			// check if plugin defined

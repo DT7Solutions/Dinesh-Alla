@@ -2476,7 +2476,9 @@ body .pp-scrollable
 }
 .vlt-partner-logo:hover img
 {
+
     opacity: 1;
+    
 }
 
 /* WIDGET: PROGRESS BAR
@@ -2790,11 +2792,11 @@ body .pp-scrollable
 .vlt-slide-photo__inside
 {
     position: relative;
-
+    
     display: inline-block;
     overflow: hidden; 
 
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .vlt-slide-photo__caption
 {
@@ -3142,3 +3144,7 @@ body .pp-scrollable
         -ms-transform: scale(1.2);
             transform: scale(1.2);
 }
+
+
+
+
