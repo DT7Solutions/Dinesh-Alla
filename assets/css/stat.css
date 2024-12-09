@@ -349,3 +349,6 @@
             display: inline-block; 
             border-radius: 5px;
    }
+   .aboutText {
+    text-align: justify;
+   }
