@@ -41,6 +41,10 @@
 		right: 0;
 		width: 50vw;
 	}
+	.container .vlt-slide-photo1 img {
+		border-radius: 10px;
+		margin: 5% 0%;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -48,6 +52,7 @@
 		right: -50vw;
 		width: 100vw;
 	}
+	
 }
 
 .vlt-custom--1259 {
@@ -89,8 +94,8 @@
 }
 .vlt-fullpage-slider .vlt-section__content {
 	min-height: 100%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
 }
 .vlt-counter-up-small {
 	background-color: #4C4C4C;
@@ -162,10 +167,13 @@
 	padding: 0.5% 5% 1%;
 }
 
-
-
-
-
+@media only screen and (max-width:576px){
+	.vlt-testimonial-item {
+		padding: 5%;
+		text-align: justify;
+		align-items: center;
+}
+}
 
 /* Responsive Code */
 @media (min-width: 2000px) and (max-width: 2800px) {
@@ -185,8 +193,12 @@
 }
 @media (min-width:991px) and (max-width: 2800px) {
 	.vlt-navbar .vlt-navbar-inner {
-        padding: 0.5% 5% 1%;
+        padding: 0.5% 3.7% 1%;
     }
+	.container .vlt-slide-photo1 img {
+		border-radius: 10px;
+	}
+	
 	.vlt-custom--4124 {
 		top: 0;
 		right: 0;
@@ -303,11 +315,11 @@
 		width: 100vw;
 	}
 	.vlt-fixed-socials {
-        display: block;
-        right: 25%;
+        display: none;
+        /* right: 43%;
         bottom: 1.5%;
 		-webkit-transform: rotate(0deg) translate3d(50%,0,0);
-    	transform: rotate(0deg) translate3d(50%,0,0);
+    	transform: rotate(0deg) translate3d(50%,0,0); */
     }
 	.hero-content {
 		position: relative;
@@ -361,6 +373,8 @@
 	}
 	.vlt-counter-up-small h6 {
 		margin-left: 2.5%;
+		font-size: .7rem;
+    	font-weight: 500;
 	}
 	.vlt-partners .vlt-animated-block{
 		margin: 0.5% 0%;
@@ -370,5 +384,24 @@
 	}
 	.vlt-timeline-item__year .vlt-btn{
 		padding: 2.5% 0%;
+	}
+	.vlt-offcanvas-menu__navigation .sf-menu>li {
+		padding: .35rem;
+	}
+	.vlt-offcanvas-menu {
+        padding: 2.5rem 1.5rem 2.75rem;
+    }
+	.vlt-offcanvas-menu__socials {
+        display: block;
+    }
+	.vlt-offcanvas-menu__footer {
+        padding-top: .7rem;
+    }
+	.vlt-offcanvas-menu__socials {
+		margin-bottom: 2.125rem;
+	}
+	.vlt-navbar--solid .vlt-navbar-inner {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 	}
 }
