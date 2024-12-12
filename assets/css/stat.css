@@ -260,8 +260,8 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    /* width:15px;
-        height: 15px; */
+    width:45px;
+    height: 45px;
     border-radius: 20px;
     background-size: 30px 30px;
   }
@@ -309,7 +309,7 @@
   }
 
   .content {
-    padding: 10px;
+    padding: 10px 5px;
     font-size: 14px;
     line-height: 1.5;
     border-radius: 5px;
@@ -352,13 +352,13 @@
     left: -90px !important;
   }
   .timeline-item:nth-child(odd) .buble-content {
-    top: -275px;
+    top: -295px;
     left: -30px;
     width: 175px;
     height: 250px;
   }
   .timeline-item:nth-child(even) .buble-content {
-    bottom: -275px;
+    bottom: -295px;
     left: -25px;
     width: 175px;
     height: 250px;
@@ -367,7 +367,8 @@
     padding: 2px 15px;
   }
   .container .vlt-slide-photo1 img {
-    margin: 10% 0% 5% 0%;
+    margin: 10% 0% 5% 20%;
+    height: 500px;
   }
   .popup-content {
     left: 38px !important;
