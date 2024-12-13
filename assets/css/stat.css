@@ -395,7 +395,7 @@
 .vlt-project-showcase__item__title {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: var(--digihub-primary, #c3323a);
+  -webkit-text-stroke-color: var(--digihub-primary, #fff);
 }
 .vlt-btn .vlt-link-with-arrow__text {
   border: 2px solid #c3323a;
