@@ -7,17 +7,22 @@
 
             let name = form.querySelector("input[name='name']").value.trim();
             let email = form.querySelector("input[name='email']").value.trim();
-            let category = form.querySelector("input[name='category']").value.trim();
-            let budget = form.querySelector("select").value.trim();
+            let telephone = form.querySelector("input[name='telephone']").value.trim();
+            let purpose = form.querySelector("select").value.trim();
             let message = form.querySelector("textarea[name='message']").value.trim();
 
-            if (!name || !email || category || !budget || !message) {
+            if (!name || !email || !telephone || !purpose || !message) {
                 displayError(form, 'Please fill in all required fields.');
                 return;
             }
 
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
                 displayError(form, 'Please enter a valid email address.');
+                return;
+            }
+
+            if (!/^\d{10}$/.test(telephone)) {
+                displayError(form, 'Please enter a valid contact number.');
                 return;
             }
 
@@ -33,8 +38,8 @@
         let params = {
             name: form.querySelector("input[name='name']").value,
             email: form.querySelector("input[name='email']").value,
-            category: form.querySelector("input[name='category']").value,
-            budget: form.querySelector("select").value,
+            telephone: form.querySelector("input[name='telephone']").value,
+            purpose: form.querySelector("select").value,
             message: form.querySelector("textarea[name='message']").value,
         };
 
