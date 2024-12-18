@@ -164,7 +164,13 @@
     text-align: justify;
     align-items: center;
   }
+
+  .aboutText {
+    font-size: 14px!important;
+  line-height: 24px!important;
+  }
 }
+
 
 /* Responsive Code */
 @media (min-width: 2000px) and (max-width: 2800px) {
