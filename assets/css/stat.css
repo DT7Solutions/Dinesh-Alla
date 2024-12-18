@@ -378,7 +378,7 @@
 /* timeline ends */
 
 .vlt-timeline-item__title {
-  color: #c3323a;
+  color: #f1e1c6;
 }
 .vlt-timeline-item__text {
   color: #fff !important;
@@ -406,6 +406,8 @@
 .aboutText {
   text-align: justify;
   color: #000;
+  font-size: 17px;
+  line-height: 29px;
 }
 
 /* Blogs Start */
