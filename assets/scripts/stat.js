@@ -36,3 +36,49 @@ window.addEventListener("click", function (e) {
 });
 
 // Blogs end 
+
+
+// Portfolio scroll start
+document.addEventListener("DOMContentLoaded", () => {
+  const portfolioCards = document.querySelector("#portfolio-cards");
+  const cards = Array.from(portfolioCards.querySelectorAll(".portfolio-card"));
+
+  portfolioCards.addEventListener("scroll", () => {
+    const scrollTop = portfolioCards.scrollTop;
+    const maxScroll = portfolioCards.scrollHeight - portfolioCards.clientHeight;
+
+     if (scrollTop === 0) {
+      portfolioCards.style.overflowY = "hidden";
+      window.scrollBy(0, -10); // Scroll the page up
+    }
+
+    // working good in mobile
+    // Handle when reaching the bottom of the section
+    if (scrollTop >= maxScroll) {
+      portfolioCards.style.overflowY = "hidden";
+      window.scrollBy(0, 10); // Scroll the page down
+      setTimeout(() => {
+        portfolioCards.style.overflowY = "auto"; // Restore overflow
+      }, 10);
+    }
+
+    // working good in laptop and mobile simulator extension
+    // if (scrollTop >= maxScroll) {
+    //   portfolioCards.style.overflowY = "hidden";
+    //   window.scrollBy(0, 10); // Scroll the page down
+    // }
+
+    if (scrollTop > 0 && scrollTop < maxScroll) {
+      portfolioCards.style.overflowY = "auto";
+    }
+  });
+
+  portfolioCards.addEventListener("touchstart", () => {
+    portfolioCards.style.overflowY = "auto";
+  });
+
+  portfolioCards.addEventListener("mouseleave", () => {
+    portfolioCards.style.overflowY = "auto";
+  });
+});
+// Portfolio scroll end

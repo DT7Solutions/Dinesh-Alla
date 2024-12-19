@@ -571,15 +571,20 @@
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  position: relative;
 }
+
 #portfolio-cards::-webkit-scrollbar {
   display: none;
 }
+
 .portfolio-card {
   position: sticky;
   top: 0%;
+  z-index: 1; 
   padding-top: calc(var(--index) * var(--card-top-offset));
 }
+
 .portfolio-card-content {
   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
   background: #fffaf2;
@@ -602,12 +607,33 @@
   height: 100%;
   border-radius: 12px;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
   .portfolio-card-content {
       flex-direction: column-reverse;
   }
   .portfolio-card-content .portfolio-content {
       width: 100%;
+  }
+}
+@media screen and (max-width: 667px){
+  #card-1 {
+    --index: 1;
+  }
+  #card-2 {
+    --index: 1;
+  }
+  #card-3 {
+    --index: 1;
+  }
+  #card-4 {
+    --index: 1;
+  }
+  #card-5 {
+    --index: 1;
+  }
+  h2{
+    font-size: 2rem;
+    line-height: 1.1;
   }
 }
 /* Animation */
